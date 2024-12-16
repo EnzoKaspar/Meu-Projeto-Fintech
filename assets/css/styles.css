@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 60px; /* Espaço para a barra fixa */
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Estilos do corpo da home organizado */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    min-height: calc(100vh - 140px); /* Altura ajustada para centralizar */
+    place-items: center; /* Centraliza o conteúdo verticalmente e horizontalmente */
+}
+
+.home-grid .center {
+    grid-column: span 2; /* Centraliza o ícone no meio */
+}
+
+.home-grid .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-grid .item img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.home-grid .item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos do rodapé */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer img:hover {
+    opacity: 1;
+}
+
+.footer p {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+
